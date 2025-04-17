@@ -6,7 +6,7 @@ import javax.persistence.*;
 public class Utente {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) //studiare le strategy
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idutente")
     private int id;
 
