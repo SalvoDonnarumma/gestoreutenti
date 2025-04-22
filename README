@@ -1,5 +1,4 @@
 # Gestore Utenti
-
 Questo progetto è un'applicazione web sviluppata in Java per la gestione delle operazioni CRUD (Create, Read, Update, Delete) su una tabella "Utenti". L'applicativo consente di visualizzare, creare, modificare ed eliminare utenti attraverso un'interfaccia web semplice e funzionale.
 
 ## 🔧 Tecnologie Utilizzate
