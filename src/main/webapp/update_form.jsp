@@ -75,7 +75,7 @@
 <body>
 <div class="form-container">
     <h2>Modifica Utente</h2>
-    <form action="ModificaUtente" method="GET">
+    <form action="AggiungiModifica" method="GET">
         <input type="hidden" name="id" value="${param.id}">
 
         <label for="nome">Nome:</label>

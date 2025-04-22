@@ -75,7 +75,7 @@
 <body>
 <div class="form-container">
     <h2>Aggiungi Utente</h2>
-    <form action="AggiungiUtente" method="GET">
+    <form action="AggiungiModifica" method="GET">
         <input type="hidden" name="id">
 
         <label for="nome">Nome:</label>

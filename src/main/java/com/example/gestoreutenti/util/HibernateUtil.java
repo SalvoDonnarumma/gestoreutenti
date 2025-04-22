@@ -5,8 +5,6 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
-
-import javax.imageio.spi.ServiceRegistry;
 import java.util.Properties;
 
 public class HibernateUtil {
@@ -18,11 +16,11 @@ public class HibernateUtil {
                 Configuration configuration = new Configuration();
 
                 Properties settings = new Properties();
-                settings.put(Environment.DRIVER, "com.mysql.jdbc.Driver");
-                settings.put(Environment.URL, "jdbc:mysql://localhost:3306/utentidb?useSSL=false");
+                settings.put(Environment.DRIVER, "com.mysql.cj.jdbc.Driver");
+                settings.put(Environment.URL, "jdbc:mysql://localhost:3306/utentidb?allowPublicKeyRetrieval=true&useSSL=false");
                 settings.put(Environment.USER, "root");
                 settings.put(Environment.PASS, "MySQLR00TP4ssW0rD");
-                settings.put(Environment.DIALECT, "org.hibernate.dialect.MySQL5Dialect");
+                settings.put(Environment.DIALECT, "org.hibernate.dialect.MySQL8Dialect");settings.put(Environment.DIALECT, "org.hibernate.dialect.MySQL8Dialect");
 
                 settings.put(Environment.SHOW_SQL, "true");
                 settings.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
